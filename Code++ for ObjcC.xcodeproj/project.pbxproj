@@ -7,13 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1825BAB72665D66E007F36AC /* NSObject+Codepp.h in Headers */ = {isa = PBXBuildFile; fileRef = 1825BAB52665D66E007F36AC /* NSObject+Codepp.h */; };
+		1825BAB82665D66E007F36AC /* NSObject+Codepp.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825BAB62665D66E007F36AC /* NSObject+Codepp.m */; };
 		184003962664DE5600B7E698 /* Code___for_ObjcC.h in Headers */ = {isa = PBXBuildFile; fileRef = 184003942664DE5600B7E698 /* Code___for_ObjcC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		184003A12664DEA300B7E698 /* xtuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 1840039D2664DEA300B7E698 /* xtuple.m */; };
+		184003A22664DEA300B7E698 /* CoreConnect.h in Headers */ = {isa = PBXBuildFile; fileRef = 1840039E2664DEA300B7E698 /* CoreConnect.h */; };
+		184003A32664DEA300B7E698 /* Code++.h in Headers */ = {isa = PBXBuildFile; fileRef = 1840039F2664DEA300B7E698 /* Code++.h */; };
+		184003A42664DEA300B7E698 /* xtuple.h in Headers */ = {isa = PBXBuildFile; fileRef = 184003A02664DEA300B7E698 /* xtuple.h */; };
+		184003A72664DF6900B7E698 /* Test.h in Headers */ = {isa = PBXBuildFile; fileRef = 184003A52664DF6900B7E698 /* Test.h */; };
+		184003A82664DF6900B7E698 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 184003A62664DF6900B7E698 /* Test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1825BAB52665D66E007F36AC /* NSObject+Codepp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Codepp.h"; sourceTree = "<group>"; };
+		1825BAB62665D66E007F36AC /* NSObject+Codepp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Codepp.m"; sourceTree = "<group>"; };
 		184003912664DE5600B7E698 /* Code___for_ObjcC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Code___for_ObjcC.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		184003942664DE5600B7E698 /* Code___for_ObjcC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Code___for_ObjcC.h"; sourceTree = "<group>"; };
 		184003952664DE5600B7E698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1840039D2664DEA300B7E698 /* xtuple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xtuple.m; sourceTree = "<group>"; };
+		1840039E2664DEA300B7E698 /* CoreConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreConnect.h; sourceTree = "<group>"; };
+		1840039F2664DEA300B7E698 /* Code++.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Code++.h"; sourceTree = "<group>"; };
+		184003A02664DEA300B7E698 /* xtuple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xtuple.h; sourceTree = "<group>"; };
+		184003A52664DF6900B7E698 /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		184003A62664DF6900B7E698 /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +62,26 @@
 		184003932664DE5600B7E698 /* Code++ for ObjcC */ = {
 			isa = PBXGroup;
 			children = (
+				1840039C2664DEA300B7E698 /* Code++ */,
 				184003942664DE5600B7E698 /* Code___for_ObjcC.h */,
 				184003952664DE5600B7E698 /* Info.plist */,
+				184003A52664DF6900B7E698 /* Test.h */,
+				184003A62664DF6900B7E698 /* Test.m */,
 			);
 			path = "Code++ for ObjcC";
+			sourceTree = "<group>";
+		};
+		1840039C2664DEA300B7E698 /* Code++ */ = {
+			isa = PBXGroup;
+			children = (
+				1840039F2664DEA300B7E698 /* Code++.h */,
+				1840039E2664DEA300B7E698 /* CoreConnect.h */,
+				184003A02664DEA300B7E698 /* xtuple.h */,
+				1840039D2664DEA300B7E698 /* xtuple.m */,
+				1825BAB52665D66E007F36AC /* NSObject+Codepp.h */,
+				1825BAB62665D66E007F36AC /* NSObject+Codepp.m */,
+			);
+			path = "Code++";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,6 +91,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184003A72664DF6900B7E698 /* Test.h in Headers */,
+				1825BAB72665D66E007F36AC /* NSObject+Codepp.h in Headers */,
+				184003A42664DEA300B7E698 /* xtuple.h in Headers */,
+				184003A22664DEA300B7E698 /* CoreConnect.h in Headers */,
+				184003A32664DEA300B7E698 /* Code++.h in Headers */,
 				184003962664DE5600B7E698 /* Code___for_ObjcC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,6 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184003A12664DEA300B7E698 /* xtuple.m in Sources */,
+				1825BAB82665D66E007F36AC /* NSObject+Codepp.m in Sources */,
+				184003A82664DF6900B7E698 /* Test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
