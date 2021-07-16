@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "ObjcCodePP"
+  s.name         = "ObjcCodepp"
   s.version      = "1.0"
   s.summary      = 'objc code++.'
   s.homepage     = 'https://github.com/Meterwhite/ObjcCodePlusPlus'

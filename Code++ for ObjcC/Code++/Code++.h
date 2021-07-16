@@ -10,7 +10,6 @@
 #define CodePP_h
 
 #import "NSObject+Codepp.h"
-#import <UIKit/UIKit.h>
 #import "CoreConnect.h"
 #import "xtuple.h"
 
@@ -26,6 +25,22 @@
 #define xnumber         NSNumber
 #define xdictionary     NSDictionary
 #define xmdictionary    NSMutableDictionary
+
+#if TARGET_OS_IPHONE || TARGET_OS_TV
+
+#import <UIKit/UIKit.h>
+#define xrect           CGRect
+#define xpoint          CGPoint
+#define xsize           CGSize
+
+#elif TARGET_OS_MAC
+
+#import <AppKit/AppKit.h>
+#define xrect           NSRect
+#define xpoint          NSPoint
+#define xsize           NSSize
+
+#endif
 
 #pragma mark - LET 语法糖
 #define LET_NEW(T, var)  T* var = [T new]
@@ -420,14 +435,14 @@ NS_INLINE __kindof NSValue * __CodePPBox(const char *type, ...) {
     } else if (strcmp(type, @encode(unsigned short)) == 0) {
         unsigned short actual = (unsigned short)va_arg(v, unsigned int);
         obj = [NSNumber numberWithUnsignedShort:actual];
-    } else if (strcmp(type, @encode(CGRect)) == 0) {
-        CGRect actual = (CGRect)va_arg(v, CGRect);
+    } else if (strcmp(type, @encode(xrect)) == 0) {
+        xrect actual = (xrect)va_arg(v, xrect);
         obj = [NSValue value:&actual withObjCType:type];
-    } else if (strcmp(type, @encode(CGPoint)) == 0) {
-        CGPoint actual = (CGPoint)va_arg(v, CGPoint);
+    } else if (strcmp(type, @encode(xpoint)) == 0) {
+        xpoint actual = (xpoint)va_arg(v, xpoint);
         obj = [NSValue value:&actual withObjCType:type];
-    } else if (strcmp(type, @encode(CGSize)) == 0) {
-        CGSize actual = (CGSize)va_arg(v, CGSize);
+    } else if (strcmp(type, @encode(xsize)) == 0) {
+        xsize actual = (xsize)va_arg(v, xsize);
         obj = [NSValue value:&actual withObjCType:type];
     }
     va_end(v);
