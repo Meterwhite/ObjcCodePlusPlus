@@ -10,7 +10,9 @@
 #import "Code++.h"
 
 @interface xtuple ()
+
 @property (nonatomic) NSUInteger count;
+
 @end
 
 @implementation xtuple
@@ -24,8 +26,7 @@ id TupleGuard(void) {
     return _tuple_guard;
 }
 
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
     if (self) {
         _count = 0;
