@@ -153,7 +153,7 @@ CORE_CONNECT_IF_EQ(4,CORE_CONNECT_ARGCOUNT(__VA_ARGS__))(__CODEPP_COLOR(__VA_ARG
 #define THE_BOXED(value)     __CodePPBox(@encode(__typeof__((value))), (value))
 #define THE_RECT(x,y,w,h)    CGRectMake(x,y,w,h)
 #define THE_SIZE(w,h)        CGSizeMake(w,h)
-#define THE_POINT(x,y)       CGSizeMake(x,y)
+#define THE_POINT(x,y)       CGPointMake(x,y)
 #define THE_INSERTS(t,l,b,r) UIEdgeInsetsMake(t,l,b,r)
 #define THE_IMAGE(...)       [UIImage imageNamed:LET_STRING(__VA_ARGS__)]
 /// 用户交互文本，本地化在此处完成
