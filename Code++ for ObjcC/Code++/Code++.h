@@ -136,7 +136,7 @@ CORE_CONNECT_IF_EQ(4,CORE_CONNECT_ARGCOUNT(__VA_ARGS__))(__CODEPP_COLOR(__VA_ARG
 #define THE_MUTABLE(...)     ([(__VA_ARGS__) mutableCopy])
 #define THE_PREDICATE(...)   ([NSPredicate predicateWithFormat:__VA_ARGS__])
 #define THE_NIB_OBJ(...)     [NSBundle.mainBundle loadNibNamed:LET_STRING(__VA_ARGS__) owner:nil options:nil].firstObject
-#define THE_NIB_VC(T, var)   T* var = [[T alloc] initWithNibName:NSStringFromClass(self) bundle:nil]
+#define THE_NIB_VC(T, var)   T* var = [[T alloc] initWithNibName:NSStringFromClass(T) bundle:nil]
 /// 三目
 #define THE_TRINO(C,A,B)     ((C)?(A):(B))
 /// 且的连续
